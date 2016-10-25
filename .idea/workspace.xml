@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba3d3202-2c53-42d8-bf08-84f95de96922" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment 3/JOGLFrame$1.class" afterPath="$PROJECT_DIR$/out/production/Assignment 3/JOGLFrame$1.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/models/cone.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/models/neptune.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/models/sphere.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/models/thomas-lyons-object.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/models/vase-nathan-gregg.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/scenegraphs/cone.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/scenegraphs/face-hierarchy-with-copy.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/scenegraphs/face-hierarchy.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/scenegraphs/humanoid.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/scenegraphs/two-humanoids.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment 3/scenegraphs/robot.xml" afterPath="$PROJECT_DIR$/out/production/Assignment 3/scenegraphs/robot.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JOGLFrame.java" afterPath="$PROJECT_DIR$/src/JOGLFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scenegraphs/robot.xml" afterPath="$PROJECT_DIR$/src/scenegraphs/robot.xml" />
     </list>
     <ignored path="Scenegraphs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,16 +63,6 @@
                 <marker date="1477420064566" expanded="false" signature="2652:3271" ph="..." />
                 <marker date="1477420064566" expanded="false" signature="3780:4472" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="humanoid.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scenegraphs/humanoid.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="128" column="18" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="18" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -257,6 +253,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="scenegraphs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS4300-Assignment3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assignment 3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS4300-Assignment3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -569,7 +587,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902467" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -583,7 +601,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1953125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1953125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -787,13 +805,6 @@
     <entry file="file://$PROJECT_DIR$/../extras/util/ObjImporter.java" />
     <entry file="file://$PROJECT_DIR$/../extras/sgraph/IScenegraphRenderer.java" />
     <entry file="file://$PROJECT_DIR$/../extras/sgraph/GL3ScenegraphRenderer.java" />
-    <entry file="file://$PROJECT_DIR$/src/scenegraphs/cone.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../extras/sgraph/SceneXMLReader.java" />
     <entry file="file://$PROJECT_DIR$/../extras/util/ObjectInstance.java" />
     <entry file="file://$PROJECT_DIR$/../extras/util/TextureImage.java" />
@@ -922,6 +933,14 @@
             <marker date="1477420064566" expanded="false" signature="2652:3271" ph="..." />
             <marker date="1477420064566" expanded="false" signature="3780:4472" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scenegraphs/cone.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
