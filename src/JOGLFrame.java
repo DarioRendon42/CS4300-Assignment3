@@ -57,7 +57,7 @@ public class JOGLFrame extends JFrame
                     view.init(canvas);
                     InputStream in = getClass().getClassLoader()
                             .getResourceAsStream
-                                    ("scenegraphs/two-robots" +
+                                    ("scenegraphs/humanoid-YMCA" +
                                     ".xml");
                     view.initScenegraph(canvas,in);
                     textRenderer = new TextRenderer(new Font("SansSerif", Font.PLAIN, 18),true,false);
