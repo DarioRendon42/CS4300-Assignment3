@@ -8,7 +8,7 @@
             <scale>10 10 10</scale>
         </set>
         <group name="robot">
-            <transform>
+            <transform name = "whole-robot">
                 <set>
                     <scale>1 1 1</scale>
                 </set>
@@ -120,7 +120,89 @@
                                 <translate>-1 0 0</translate>
                                 <scale>-1 1 1</scale>
                             </set>
-                            <group copyof="arm">
+                            <group name="arm-r">
+                                <transform name="pivot-r">
+                                    <set>
+                                        <translate>1 1 0</translate>
+                                        <rotate>15 0 1 0</rotate>
+                                    </set>
+                                    <group>
+                                        <transform name="pivot-mesh-r">
+                                            <set>
+                                                <scale>1.5 1.5 1.5</scale>
+                                            </set>
+                                            <object instanceof="box">
+                                                <material>
+                                                    <color>.8 .8 0</color>
+                                                </material>
+                                            </object>
+                                        </transform>
+                                        <transform name="armLower-r">
+                                            <set>
+                                                <rotate>30 1 0 0</rotate>
+                                            </set>
+                                            <group>
+                                                <transform name="armLower-mesh-r">
+                                                    <set>
+                                                        <scale>.4 4 .4</scale>
+                                                    </set>
+                                                    <object instanceof="cylinder">
+                                                        <material>
+                                                            <color>1 .5 0</color>
+                                                        </material>
+                                                    </object>
+                                                </transform>
+                                                <transform name="armUpper-r">
+                                                    <set>
+                                                        <translate>0 4 0</translate>
+                                                        <rotate>90 1 0 0</rotate>
+                                                    </set>
+                                                    <group>
+                                                        <transform name="armUpper-mesh-r">
+                                                            <set>
+                                                                <scale>.4 4 .4</scale>
+                                                            </set>
+                                                            <object instanceof="cylinder">
+                                                                <material>
+                                                                    <color>.75 0 1</color>
+                                                                </material>
+                                                            </object>
+                                                        </transform>
+                                                        <transform name="claws-r">
+                                                            <set>
+                                                                <translate>0 4 0</translate>
+                                                            </set>
+                                                            <group>
+                                                                <transform name="claw1-mesh-r">
+                                                                    <set>\
+                                                                        <scale>.3 .3 .3</scale>
+                                                                        <rotate>-15 0 0 1</rotate>
+                                                                    </set>
+                                                                    <object instanceof="claw">
+                                                                        <material>
+                                                                            <color>1 0 0</color>
+                                                                        </material>
+                                                                    </object>
+                                                                </transform>
+                                                                <transform name="claw2-mesh-r">
+                                                                    <set>
+                                                                        <scale>-.3 .3 .3</scale>
+                                                                        <rotate>-15 0 0 1</rotate>
+                                                                    </set>
+                                                                    <object instanceof="claw">
+                                                                        <material>
+                                                                            <color>1 0 0</color>
+                                                                        </material>
+                                                                    </object>
+                                                                </transform>
+                                                            </group>
+                                                        </transform>
+                                                    </group>
+                                                </transform>
+                                            </group>
+                                        </transform>
+                                    </group>
+                                </transform>
                             </group>
                         </transform>
                     </group>

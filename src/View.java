@@ -5,6 +5,7 @@ import org.joml.Matrix4f;
 import org.joml.Vector2f;
 import org.joml.Vector3f;
 import org.joml.Vector4f;
+import sgraph.INode;
 
 
 import java.io.File;
@@ -31,12 +32,14 @@ public class View {
     private Matrix4f projection, trackballTransform;
     private float trackballRadius;
     private Vector2f mousePos;
-
-
     private util.ShaderProgram program;
     private util.ShaderLocationsVault shaderLocations;
     private int projectionLocation;
     private sgraph.IScenegraph<VertexAttrib> scenegraph;
+    private Map<String, INode> nodes;
+    private double time;
+    private int angleOfRotation;
+    private robotAnimation robotA;
 
 
     public View() {
@@ -45,6 +48,7 @@ public class View {
         trackballRadius = 300;
         trackballTransform = new Matrix4f();
         scenegraph = null;
+        angleOfRotation = 0;
     }
 
     public void initScenegraph(GLAutoDrawable gla, InputStream in) throws Exception {
@@ -56,6 +60,7 @@ public class View {
         program.enable(gl);
 
         scenegraph = sgraph.SceneXMLReader.importScenegraph(in, new VertexAttribProducer());
+        robotA = new robotAnimation(scenegraph);
 
         sgraph.IScenegraphRenderer renderer = new sgraph.GL3ScenegraphRenderer();
         renderer.setContext(gla);
@@ -84,11 +89,14 @@ public class View {
     }
 
 
+
+
     public void draw(GLAutoDrawable gla) {
         GL3 gl = gla.getGL().getGL3();
 
         gl.glClearColor(0, 0, 0, 1);
         gl.glClear(gl.GL_COLOR_BUFFER_BIT | gl.GL_DEPTH_BUFFER_BIT);
+        gl.glEnable(gl.GL_DEPTH_TEST);
 
         program.enable(gl);
 
@@ -101,7 +109,7 @@ public class View {
          * Right now this matrix is identity, which means "no transformations"
          */
         modelView.push(new Matrix4f());
-        modelView.peek().lookAt(new Vector3f(0, 50, 80), new Vector3f(0, 50, 0), new Vector3f(0, 1, 0))
+        modelView.peek().lookAt(new Vector3f(0, 50, 130), new Vector3f(0, 50, 0), new Vector3f(0, 1, 0))
                 .mul(trackballTransform);
 
 
@@ -115,7 +123,11 @@ public class View {
 
         gl.glPolygonMode(GL.GL_FRONT,GL3.GL_TRIANGLES); //OUTLINES
 
+
+
+        robotA.transform(time);
         scenegraph.draw(modelView);
+        time ++;
     /*
      *OpenGL batch-processes all its OpenGL commands.
           *  *The next command asks OpenGL to "empty" its batch of issued commands, i.e. draw
