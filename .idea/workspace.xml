@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba3d3202-2c53-42d8-bf08-84f95de96922" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/scenegraphs/humanoid-YMCA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/scenegraphs/humanoidM.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/scenegraphs/humanoidY.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment 3/JOGLFrame$1.class" afterPath="$PROJECT_DIR$/out/production/Assignment 3/JOGLFrame$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assignment 3.iml" afterPath="$PROJECT_DIR$/Assignment 3.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment 3/scenegraphs/robot.xml" afterPath="$PROJECT_DIR$/out/production/Assignment 3/scenegraphs/robot.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JOGLFrame.java" afterPath="$PROJECT_DIR$/src/JOGLFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scenegraphs/robot.xml" afterPath="$PROJECT_DIR$/src/scenegraphs/robot.xml" />
     </list>
     <ignored path="Scenegraphs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,53 +43,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="humanoidM.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/scenegraphs/humanoidM.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="189" column="57" selection-start-line="189" selection-start-column="57" selection-end-line="189" selection-end-column="57" />
-              <folding>
-                <element signature="n#group#0;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
-                <element signature="n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
-                <element signature="n#transform#1;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
-                <element signature="n#transform#2;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
-                <element signature="n#group#2;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="robot.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scenegraphs/robot.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+            <state relative-caret-position="313">
+              <caret line="68" column="66" selection-start-line="68" selection-start-column="66" selection-end-line="68" selection-end-column="66" />
               <folding>
                 <element signature="n#transform#0;n#group#0;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
-                <element signature="n#transform#1;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
-                <element signature="n#transform#2;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
-                <element signature="n#group#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#transform#0;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#transform#0;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
                 <element signature="n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <marker date="1477420064566" expanded="false" signature="2652:3271" ph="..." />
+                <marker date="1477420064566" expanded="false" signature="3780:4472" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Assignment3.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Assignment3.java">
+      <file leaf-file-name="humanoid.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scenegraphs/humanoid.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            <state relative-caret-position="68">
+              <caret line="128" column="18" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JOGLFrame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JOGLFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JOGLFrame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="401">
-              <caret line="59" column="63" selection-start-line="59" selection-start-column="63" selection-end-line="59" selection-end-column="63" />
+              <caret line="59" column="60" selection-start-line="59" selection-start-column="60" selection-end-line="59" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -165,10 +150,10 @@
         <option value="$PROJECT_DIR$/src/View.java" />
         <option value="$PROJECT_DIR$/src/scenegraphs/two-robots.xml" />
         <option value="$PROJECT_DIR$/src/scenegraphs/humanoid-YMCA.xml" />
-        <option value="$PROJECT_DIR$/src/scenegraphs/robot.xml" />
         <option value="$PROJECT_DIR$/src/scenegraphs/humanoidY.xml" />
-        <option value="$PROJECT_DIR$/src/JOGLFrame.java" />
         <option value="$PROJECT_DIR$/src/scenegraphs/humanoidM.xml" />
+        <option value="$PROJECT_DIR$/src/scenegraphs/robot.xml" />
+        <option value="$PROJECT_DIR$/src/JOGLFrame.java" />
       </list>
     </option>
   </component>
@@ -820,22 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Assignment3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scenegraphs/humanoid.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2118">
-          <caret line="128" column="18" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scenegraphs/two-robots.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -881,34 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <element signature="method#View#0;class#View#0" expanded="false" />
-            <element signature="method#init#0;class#View#0" expanded="false" />
-            <element signature="method#mouseDragged#0;class#View#0" expanded="false" />
-            <element signature="method#reshape#0;class#View#0" expanded="false" />
-            <element signature="method#dispose#0;class#View#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scenegraphs/robot.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-          <folding>
-            <element signature="n#transform#0;n#group#0;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
-            <element signature="n#transform#1;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
-            <element signature="n#transform#2;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
-            <element signature="n#group#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
-            <element signature="n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scenegraphs/humanoidY.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -924,18 +865,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JOGLFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="59" column="63" selection-start-line="59" selection-start-column="63" selection-end-line="59" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scenegraphs/humanoidM.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="189" column="57" selection-start-line="189" selection-start-column="57" selection-end-line="189" selection-end-column="57" />
+        <state relative-caret-position="158">
+          <caret line="187" column="41" selection-start-line="187" selection-start-column="41" selection-end-line="187" selection-end-column="41" />
           <folding>
             <element signature="n#group#0;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
             <element signature="n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
@@ -943,6 +876,60 @@
             <element signature="n#transform#2;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
             <element signature="n#group#2;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding>
+            <element signature="method#View#0;class#View#0" expanded="false" />
+            <element signature="method#init#0;class#View#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#View#0" expanded="false" />
+            <element signature="method#reshape#0;class#View#0" expanded="false" />
+            <element signature="method#dispose#0;class#View#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scenegraphs/humanoid.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="128" column="18" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scenegraphs/robot.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="68" column="66" selection-start-line="68" selection-start-column="66" selection-end-line="68" selection-end-column="66" />
+          <folding>
+            <element signature="n#transform#0;n#group#0;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#transform#0;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#transform#0;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <marker date="1477420064566" expanded="false" signature="2652:3271" ph="..." />
+            <marker date="1477420064566" expanded="false" signature="3780:4472" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JOGLFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="59" column="60" selection-start-line="59" selection-start-column="60" selection-end-line="59" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
