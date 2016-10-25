@@ -1,0 +1,114 @@
+<scene>
+    <instance name="cylinder" path="models/cylinder.obj"></instance>
+    <instance name="box" path="models/box.obj"></instance>
+    <instance name="sphere" path="models/sphere.obj"></instance>
+    <instance name="claw" path="models/claw.obj"></instance>
+    <transform>
+        <set>
+            <translate>0 2 0</translate>
+            <scale>10 10 10</scale>
+        </set>
+        <group name="robot">
+            <transform>
+                <set>
+                    <scale>1 1 1</scale>
+                </set>
+                <group>
+                    <group name="base">
+                        <transform name="center">
+                            <set>
+                                <scale>3 1 3</scale>
+                            </set>
+                            <object instanceof="cylinder">
+                                <material>
+                                    <color>.7 .7 .7</color>
+                                </material>
+                            </object>
+                        </transform>
+                    </group>
+                    <group name="arms">
+                        <transform name="armLeft">
+                            <set>
+                                <translate>1 0 0</translate>
+                            </set>
+                            <group name="arm">
+                                <transform name="pivot">
+                                    <set>
+                                        <translate>1 1 0</translate>
+                                        <rotate>45 0 1 0</rotate>
+                                        <scale>1.5 1.5 1.5</scale>
+                                    </set>
+                                    <object instanceof="box">
+                                        <material>
+                                            <color>.8 .8 0</color>
+                                        </material>
+                                    </object>
+                                </transform>
+                                <transform name="armLower">
+                                    <set>
+                                        <translate>1 1 0</translate>
+                                        <rotate>45 1 1 0</rotate>
+                                        <scale>.4 4 .4</scale>
+                                    </set>
+                                    <object instanceof="cylinder">
+                                        <material>
+                                            <color>1 .5 0</color>
+                                        </material>
+                                    </object>
+                                </transform>
+                                <transform name="armUpper">
+                                    <set>
+                                        <translate>2 4.5 3</translate>
+                                        <rotate>135 1 0 0</rotate>
+                                        <scale>.4 4 .4</scale>
+                                    </set>
+                                    <object instanceof="cylinder">
+                                        <material>
+                                            <color>.75 0 1</color>
+                                        </material>
+                                    </object>
+                                </transform>
+                                <group name="claws">
+                                    <transform name="claw1">
+                                        <set>
+                                            <translate>2 2 5.5</translate>
+                                            <scale>.3 .3 .3</scale>
+                                            <rotate>135 1 0 0</rotate>
+                                            <rotate>-15 0 0 1</rotate>
+                                        </set>
+                                        <object instanceof="claw">
+                                            <material>
+                                                <color>1 0 0</color>
+                                            </material>
+                                        </object>
+                                    </transform>
+                                    <transform name="claw2">
+                                        <set>
+                                            <translate>2 2 5.5</translate>
+                                            <scale>-.3 .3 .3</scale>
+                                            <rotate>135 1 0 0</rotate>
+                                            <rotate>-15 0 0 1</rotate>
+                                        </set>
+                                        <object instanceof="claw">
+                                            <material>
+                                                <color>1 0 0</color>
+                                            </material>
+                                        </object>
+                                    </transform>
+                                </group>
+                            </group>
+                        </transform>
+                        <transform name="arm-right">
+                            <set>
+                                <translate>-1 0 0</translate>
+                                <scale>-1 1 1</scale>
+                            </set>
+                            <group copyof="arm">
+                            </group>
+                        </transform>
+                    </group>
+                </group>
+            </transform>
+        </group>
+    </transform>
+</scene>
