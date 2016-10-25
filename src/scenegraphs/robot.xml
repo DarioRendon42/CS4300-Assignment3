@@ -1,7 +1,6 @@
 <scene>
     <instance name="cylinder" path="models/cylinder.obj"></instance>
     <instance name="box" path="models/box.obj"></instance>
-    <instance name="sphere" path="models/sphere.obj"></instance>
     <instance name="claw" path="models/claw.obj"></instance>
     <transform>
         <set>
