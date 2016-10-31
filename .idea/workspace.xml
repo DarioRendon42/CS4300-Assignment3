@@ -2,7 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba3d3202-2c53-42d8-bf08-84f95de96922" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/JOGLFrame$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/JOGLFrame$KeyboardListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/JOGLFrame$MyMouseAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/JOGLFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/ScenegraphViewer$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/ScenegraphViewer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/VertexAttrib.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/VertexAttribProducer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/View.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/models/box.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/models/cone.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/models/cylinder.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/models/neptune.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/models/sphere.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/models/thomas-lyons-object.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/models/vase-nathan-gregg.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/scenegraphs/cone.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/scenegraphs/face-hierarchy-with-copy.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/scenegraphs/face-hierarchy.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/scenegraphs/humanoid.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/scenegraphs/two-humanoids.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/sgraph/AbstractNode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/sgraph/GL3ScenegraphRenderer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/sgraph/GroupNode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/sgraph/INode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/sgraph/IScenegraph.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/sgraph/IScenegraphRenderer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/sgraph/LeafNode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/sgraph/MyHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/sgraph/SceneXMLReader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/sgraph/Scenegraph.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/sgraph/TransformNode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/shaders/triangles.frag" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/shaders/triangles.vert" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/util/IVertexData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/util/Light.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/util/Material.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/util/ObjExporter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/util/ObjImporter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/util/ObjectInstance.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/util/PolygonMesh.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/util/ShaderLocationsVault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/util/ShaderProgram$ShaderInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/util/ShaderProgram.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/util/TextureImage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Scenegraphs/util/VertexProducer.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment 3/robotAnimation.class" afterPath="$PROJECT_DIR$/out/production/Assignment 3/robotAnimation.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment 3/scenegraphs/robot.xml" afterPath="$PROJECT_DIR$/out/production/Assignment 3/scenegraphs/robot.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scenegraphs/robot.xml" afterPath="$PROJECT_DIR$/src/scenegraphs/robot.xml" />
     </list>
     <ignored path="Scenegraphs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +75,7 @@
       <file leaf-file-name="View.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
+            <state relative-caret-position="374">
               <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
               <folding>
                 <element signature="method#mouseDragged#0;class#View#0" expanded="false" />
@@ -40,10 +89,31 @@
       <file leaf-file-name="robot.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scenegraphs/robot.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+            <state relative-caret-position="459">
+              <caret line="43" column="63" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
               <folding>
-                <element signature="n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#set#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#transform#0;n#group#0;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#set#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#set#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#set#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#set#0;n#transform#0;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#object#0;n#transform#0;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#set#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#transform#0;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#set#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#transform#0;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#set#0;n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#set#0;n#transform#0;n#group#0;n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#set#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#set#0;n#transform#0;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#object#0;n#transform#0;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#set#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#transform#0;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#set#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#transform#0;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+                <element signature="n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -67,7 +137,7 @@
       <file leaf-file-name="JOGLFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JOGLFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="714">
               <caret line="59" column="60" selection-start-line="59" selection-start-column="60" selection-end-line="59" selection-end-column="60" />
               <folding />
             </state>
@@ -181,9 +251,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -306,10 +375,11 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JOGL/Jogamp/jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../LightsAndTextures" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -610,7 +680,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -619,7 +689,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3493724" sideWeight="0.50208336" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2876569" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2876569" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -874,21 +944,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JOGLFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="714">
           <caret line="59" column="60" selection-start-line="59" selection-start-column="60" selection-end-line="59" selection-end-column="60" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-          <folding>
-            <element signature="method#mouseDragged#0;class#View#0" expanded="false" />
-            <element signature="method#reshape#0;class#View#0" expanded="false" />
-            <element signature="method#dispose#0;class#View#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -910,13 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="method#VertexAttrib#0;class#VertexAttrib#0" expanded="false" />
-            <element signature="method#hasData#0;class#VertexAttrib#0" expanded="false" />
-            <element signature="method#getData#0;class#VertexAttrib#0" expanded="false" />
-            <element signature="method#setData#0;class#VertexAttrib#0" expanded="false" />
-            <element signature="method#getAllAttributes#0;class#VertexAttrib#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -933,12 +984,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+          <folding>
+            <element signature="method#mouseDragged#0;class#View#0" expanded="false" />
+            <element signature="method#reshape#0;class#View#0" expanded="false" />
+            <element signature="method#dispose#0;class#View#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/scenegraphs/robot.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        <state relative-caret-position="459">
+          <caret line="43" column="63" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
           <folding>
-            <element signature="n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#set#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#transform#0;n#group#0;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#set#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#set#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#set#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#set#0;n#transform#0;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#object#0;n#transform#0;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#set#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#transform#0;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#set#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#transform#0;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#set#0;n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#set#0;n#transform#0;n#group#0;n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#set#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#set#0;n#transform#0;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#object#0;n#transform#0;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#set#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#transform#0;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#set#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#transform#0;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
+            <element signature="n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#1;n#group#0;n#transform#0;n#group#0;n#transform#1;n#group#1;n#group#0;n#transform#0;n#group#0;n#transform#0;n#scene#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

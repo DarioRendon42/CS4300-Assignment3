@@ -1,5 +1,7 @@
 <scene>
     <instance name="cylinder" path="models/cylinder.obj"></instance>
+    <instance name="pivot" path="models/pivot.obj"></instance>
+    <instance name="LowerArm" path="models/LowerArm.obj"></instance>
     <instance name="box" path="models/box.obj"></instance>
     <instance name="claw" path="models/claw.obj"></instance>
     <transform>
@@ -39,9 +41,9 @@
                                     <group>
                                         <transform name="pivot-mesh">
                                             <set>
-                                                <scale>1.5 1.5 1.5</scale>
+                                                <scale>.5 .5 .5</scale>
                                             </set>
-                                            <object instanceof="box">
+                                            <object instanceof="pivot">
                                                 <material>
                                                     <color>.8 .8 0</color>
                                                 </material>
@@ -54,9 +56,9 @@
                                             <group>
                                                 <transform name="armLower-mesh">
                                                     <set>
-                                                        <scale>.4 4 .4</scale>
+                                                        <scale>1 1 1</scale>
                                                     </set>
-                                                    <object instanceof="cylinder">
+                                                    <object instanceof="LowerArm">
                                                         <material>
                                                             <color>1 .5 0</color>
                                                         </material>
@@ -129,9 +131,9 @@
                                     <group>
                                         <transform name="pivot-mesh-r">
                                             <set>
-                                                <scale>1.5 1.5 1.5</scale>
+                                                <scale>.5 .5 .5</scale>
                                             </set>
-                                            <object instanceof="box">
+                                            <object instanceof="pivot">
                                                 <material>
                                                     <color>.8 .8 0</color>
                                                 </material>
@@ -144,9 +146,9 @@
                                             <group>
                                                 <transform name="armLower-mesh-r">
                                                     <set>
-                                                        <scale>.4 4 .4</scale>
+                                                        <scale>1 1 1</scale>
                                                     </set>
-                                                    <object instanceof="cylinder">
+                                                    <object instanceof="LowerArm">
                                                         <material>
                                                             <color>1 .5 0</color>
                                                         </material>
