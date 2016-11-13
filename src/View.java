@@ -80,7 +80,7 @@ public class View {
         //compile and make our shader program. Look at the ShaderProgram class for details on how this is done
         program = new util.ShaderProgram();
 
-        program.createProgram(gl, "shaders/triangles.vert", "shaders/triangles.frag");
+        program.createProgram(gl, "shaders/phong-multiple.vert", "shaders/phong-multiple.frag");
 
         shaderLocations = program.getAllShaderVariables(gl);
 
