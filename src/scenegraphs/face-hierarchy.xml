@@ -1,8 +1,8 @@
 <scene>
-    <instance name="sphere" path="models/sphere"></instance>
-    <instance name="box" path="models/box"></instance>
-    <instance name="cylinder" path="models/cylinder"></instance>
-    <instance name="cone" path="models/cone"></instance>
+    <instance name="sphere" path="models/sphere"/>
+    <instance name="box" path="models/box"/>
+    <instance name="cylinder" path="models/cylinder"/>
+    <instance name="cone" path="models/cone"/>
     <image name="earth" path="textures/earthmap.png" />
     <image name="white" path="textures/white.png" />
 

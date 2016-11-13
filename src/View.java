@@ -124,8 +124,11 @@ public class View {
         gl.glPolygonMode(GL.GL_FRONT,GL3.GL_TRIANGLES); //OUTLINES
 
 
+        try {
+            robotA.transform(time);
+        } catch (Exception e) {
 
-        robotA.transform(time);
+        }
         scenegraph.draw(modelView);
         time ++;
     /*

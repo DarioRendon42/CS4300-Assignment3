@@ -1,33 +1,31 @@
 <scene>
-    <instance name="cylinder" path="models/cylinder.obj"></instance>
-    <instance name="pivot" path="models/pivot.obj"></instance>
-    <instance name="LowerArm" path="models/LowerArm.obj"></instance>
-    <instance name="UpperArm" path="models/UpperArm.obj"></instance>
-    <instance name="box" path="models/box.obj"></instance>
-    <instance name="claw" path="models/claw.obj"></instance>
+    <instance name="cylinder" path="models/cylinder.obj"/>
+    <instance name="pivot" path="models/pivot.obj"/>
+    <instance name="LowerArm" path="models/LowerArm.obj"/>
+    <instance name="UpperArm" path="models/UpperArm.obj"/>
+    <instance name="box" path="models/box.obj"/>
+    <instance name="claw" path="models/claw.obj"/>
     <transform>
         <set>
             <translate>0 2 0</translate>
             <scale>10 10 10</scale>
         </set>
-        <group name="robot">
-            <transform name = "whole-robot">
+        <!--<group name="robot">-->
+            <transform name="whole-robot">
                 <set>
                     <scale>1 1 1</scale>
                 </set>
                 <group>
-                    <group name="base">
-                        <transform name="base-mesh">
-                            <set>
-                                <scale>3 1 3</scale>
-                            </set>
-                            <object instanceof="cylinder">
-                                <material>
-                                    <color>.7 .7 .7</color>
-                                </material>
-                            </object>
-                        </transform>
-                    </group>
+                    <transform name="base-mesh">
+                        <set>
+                            <scale>3 1 3</scale>
+                        </set>
+                        <object instanceof="cylinder">
+                            <material>
+                                <color>.7 .7 .7</color>
+                            </material>
+                        </object>
+                    </transform>
                     <group name="arms">
                         <transform name="armLeft">
                             <set>
@@ -211,6 +209,6 @@
                     </group>
                 </group>
             </transform>
-        </group>
+        <!--</group>-->
     </transform>
 </scene>

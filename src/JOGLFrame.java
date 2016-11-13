@@ -20,16 +20,15 @@ import java.net.URLConnection;
 /**
  * Created by ashesh on 9/18/2015.
  */
-public class JOGLFrame extends JFrame
-{
+public class JOGLFrame extends JFrame {
     private View view;
     private TextRenderer textRenderer;
     private GLCanvas canvas;
-    public JOGLFrame(String title)
-    {
+
+    public JOGLFrame(String title) {
         //routine JFrame setting stuff
         super(title);
-        setSize(500,500); //this opens a 400x400 window
+        setSize(500, 500); //this opens a 400x400 window
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //when X is pressed, close program
 
         //Our View class is the actual driver of the OpenGL stuff
@@ -52,20 +51,16 @@ public class JOGLFrame extends JFrame
         canvas.addGLEventListener(new GLEventListener() {
             @Override
             public void init(GLAutoDrawable glAutoDrawable) { //called the first time this canvas is created. Do your initialization here
-                try
-                {
+                try {
                     view.init(canvas);
                     InputStream in = getClass().getClassLoader()
                             .getResourceAsStream
-                                    ("scenegraphs/two-robots" +
-                                    ".xml");
-                    view.initScenegraph(canvas,in);
-                    textRenderer = new TextRenderer(new Font("SansSerif", Font.PLAIN, 18),true,false);
+                                    ("scenegraphs/two-robots.xml");
+                    view.initScenegraph(canvas, in);
+                    textRenderer = new TextRenderer(new Font("SansSerif", Font.PLAIN, 18), true, false);
                     glAutoDrawable.getGL().setSwapInterval(1);
-                }
-                catch (Exception e)
-                {
-                    JOptionPane.showMessageDialog(JOGLFrame.this,e.getMessage(),"Error while loading",JOptionPane.ERROR_MESSAGE);
+                } catch (Exception e) {
+                    JOptionPane.showMessageDialog(JOGLFrame.this, e.getMessage(), "Error while loading", JOptionPane.ERROR_MESSAGE);
                     System.exit(1);
                 }
             }
@@ -82,24 +77,24 @@ public class JOGLFrame extends JFrame
                 // optionally set the color
                 textRenderer.setColor(1.0f, 1.0f, 0.0f, 1.0f);
                 String text = "Frame rate: " + canvas.getAnimator().getLastFPS();
-                textRenderer.draw(text, 10, canvas.getHeight()-50);
+                textRenderer.draw(text, 10, canvas.getHeight() - 50);
                 textRenderer.endRendering();
             }
 
             @Override
             public void reshape(GLAutoDrawable glAutoDrawable, int x, int y, int width, int height) { //called every time this canvas is resized
-                view.reshape(glAutoDrawable,x,y,width,height);
+                view.reshape(glAutoDrawable, x, y, width, height);
                 repaint(); //refresh window
             }
         });
 
         //Add an animator to the canvas
-        AnimatorBase animator = new FPSAnimator(canvas,60);
-        animator.setUpdateFPSFrames(50,null);
+        AnimatorBase animator = new FPSAnimator(canvas, 60);
+        animator.setUpdateFPSFrames(50, null);
         animator.start();
     }
 
-    private class KeyboardListener implements KeyListener{
+    private class KeyboardListener implements KeyListener {
 
         @Override
         public void keyTyped(KeyEvent e) {
@@ -116,25 +111,23 @@ public class JOGLFrame extends JFrame
         }
     }
 
-    private class MyMouseAdapter extends MouseAdapter
-    {
+    private class MyMouseAdapter extends MouseAdapter {
         @Override
         public void mousePressed(MouseEvent e) {
             if (e.getButton() == MouseEvent.BUTTON1)
-                JOGLFrame.this.view.mousePressed(e.getX(),e.getY());
+                JOGLFrame.this.view.mousePressed(e.getX(), e.getY());
 
         }
 
         @Override
-        public void mouseReleased(MouseEvent e)
-        {
+        public void mouseReleased(MouseEvent e) {
             if (e.getButton() == MouseEvent.BUTTON1)
-                JOGLFrame.this.view.mouseReleased(e.getX(),e.getY());
+                JOGLFrame.this.view.mouseReleased(e.getX(), e.getY());
         }
 
         @Override
         public void mouseDragged(MouseEvent e) {
-            JOGLFrame.this.view.mouseDragged(e.getX(),e.getY());
+            JOGLFrame.this.view.mouseDragged(e.getX(), e.getY());
             JOGLFrame.this.canvas.repaint();
         }
     }
