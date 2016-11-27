@@ -2,17 +2,17 @@
     <group>
         <transform>
             <set>
-                <translate>70 0 0</translate>
+                <translate>0 0 0</translate>
                 <rotate>-90 0 1 0</rotate>
             </set>
             <group name="robot1" from="scenegraphs/robot.xml"></group>
         </transform>
         <transform>
             <set>
-                <translate>-70 0 0</translate>
-                <rotate>90 0 1 0</rotate>
+                <translate>0 50 0</translate>
+                <rotate>180 1 0 0</rotate>
             </set>
-            <group name="robot2" from="scenegraphs/robot.xml"></group>
+            <group name="bird" from="scenegraphs/bird.xml"></group>
         </transform>
     </group>
 </scene>

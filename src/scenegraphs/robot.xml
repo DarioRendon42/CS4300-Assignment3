@@ -1,108 +1,141 @@
 <scene>
     <instance name="cylinder" path="models/cylinder.obj"/>
-    <instance name="pivot" path="models/pivot.obj"/>
-    <instance name="LowerArm" path="models/LowerArm.obj"/>
-    <instance name="UpperArm" path="models/UpperArm.obj"/>
     <instance name="box" path="models/box.obj"/>
     <instance name="claw" path="models/claw.obj"/>
+    <instance name="armLower" path="models/LowerArm.obj"/>
+    <instance name="armUpper" path="models/UpperArm.obj"/>
+    <instance name="pivot" path="models/pivot.obj"/>
+
+    <light>
+        <ambient>1 1 1</ambient>
+        <diffuse>0.8 0.8 0.8</diffuse>
+        <specular>0.8 0.8 0.8</specular>
+        <position>0 100 0 </position>
+        <spotangle>25</spotangle>
+        <spotdirection>0 -1 0 </spotdirection>
+    </light>
     <transform>
         <set>
             <translate>0 2 0</translate>
             <scale>10 10 10</scale>
         </set>
-        <transform name="whole-robot">
-            <set>
-                <scale>1 1 1</scale>
-            </set>
-            <group>
-                <transform name="base-mesh">
-                    <set>
-                        <scale>3 1 3</scale>
-                    </set>
-                    <object instanceof="cylinder">
-                        <material>
-                            <color>.7 .7 .7</color>
-                        </material>
-                    </object>
-                </transform>
-                <group name="arms">
-                    <transform name="armLeft">
-                        <set>
-                            <translate>1 0 0</translate>
-                        </set>
-                        <transform name="pivot">
+        <group name="robot">
+            <transform name = "whole-robot">
+                <set>
+                    <scale>1 1 1</scale>
+                </set>
+                <group>
+                    <group name="base">
+                        <transform name="base-mesh">
                             <set>
-                                <translate>1 1 0</translate>
-                                <rotate>15 0 1 0</rotate>
+                                <scale>3 1 3</scale>
                             </set>
-                            <group>
-                                <transform name="pivot-mesh">
+                            <object instanceof="cylinder">
+                                <material>
+                                    <ambient>0.7 0.5 0.3</ambient>
+                                    <diffuse>0.2 0.2 0.2</diffuse>
+                                    <specular>0.9 0.9 0.9</specular>
+                                    <shininess>100</shininess>
+                                </material>
+                            </object>
+                        </transform>
+                    </group>
+                    <group name="arms">
+                        <transform name="armLeft">
+                            <set>
+                                <translate>1 0 0</translate>
+                            </set>
+                            <group name="arm">
+                                <transform name="pivot">
                                     <set>
-                                        <scale>.5 .5 .5</scale>
-                                    </set>
-                                    <object instanceof="pivot">
-                                        <material>
-                                            <color>.8 .8 0</color>
-                                        </material>
-                                    </object>
-                                </transform>
-                                <transform name="armLower">
-                                    <set>
-                                        <rotate>30 1 0 0</rotate>
+                                        <translate>1 1 0</translate>
+                                        <rotate>15 0 1 0</rotate>
                                     </set>
                                     <group>
-                                        <transform name="armLower-mesh">
+                                        <transform name="pivot-mesh">
                                             <set>
-                                                <scale>1 1 1</scale>
+                                                <scale>1.5 1.5 1.5</scale>
                                             </set>
-                                            <object instanceof="LowerArm">
+                                            <object instanceof="box">
                                                 <material>
-                                                    <color>1 .5 0</color>
+                                                    <ambient>0.1 0.2 0.3</ambient>
+                                                    <diffuse>0.5 0.5 0.5</diffuse>
+                                                    <specular>0.8 0.8 0.8</specular>
+                                                    <shininess>100</shininess>
                                                 </material>
                                             </object>
                                         </transform>
-                                        <transform name="armUpper">
+                                        <transform name="armLower">
                                             <set>
-                                                <translate>0 4 0</translate>
-                                                <rotate>90 1 0 0</rotate>
+                                                <rotate>30 1 0 0</rotate>
                                             </set>
                                             <group>
-                                                <transform name="armUpper-mesh">
+                                                <transform name="armLower-mesh">
                                                     <set>
-                                                        <scale>1 1 1</scale>
+                                                        <scale>.4 4 .4</scale>
                                                     </set>
-                                                    <object instanceof="UpperArm">
+                                                    <object instanceof="cylinder">
                                                         <material>
-                                                            <color>.75 0 1</color>
+                                                            <ambient>0.3 0.2 0.1</ambient>
+                                                            <diffuse>0.4 0.4 0.4</diffuse>
+                                                            <specular>0.9 0.9 0.9</specular>
+                                                            <shininess>100</shininess>
                                                         </material>
                                                     </object>
                                                 </transform>
-                                                <transform name="claws">
+                                                <transform name="armUpper">
                                                     <set>
                                                         <translate>0 4 0</translate>
+                                                        <rotate>90 1 0 0</rotate>
                                                     </set>
                                                     <group>
-                                                        <transform name="claw1-mesh">
-                                                            <set>\
-                                                                <scale>.3 .3 .3</scale>
-                                                                <rotate>-15 0 0 1</rotate>
+                                                        <transform name="armUpper-mesh">
+                                                            <set>
+                                                                <scale>.4 4 .4</scale>
                                                             </set>
-                                                            <object instanceof="claw">
+                                                            <object instanceof="cylinder">
                                                                 <material>
-                                                                    <color>1 0 0</color>
+                                                                    <ambient>0.3 0.5 0.1</ambient>
+                                                                    <diffuse>0.6 0.6 0.6</diffuse>
+                                                                    <specular>0.9 0.9 0.9</specular>
+                                                                    <shininess>100</shininess>
                                                                 </material>
                                                             </object>
                                                         </transform>
-                                                        <transform name="claw2-mesh">
+                                                        <transform name="claws">
                                                             <set>
-                                                                <scale>-.3 .3 .3</scale>
-                                                                <rotate>-15 0 0 1</rotate>
+                                                                <translate>0 4 0</translate>
                                                             </set>
-                                                            <object instanceof="claw">
-                                                                <material>
-                                                                    <color>1 0 0</color>
-                                                                </material>
-                                                            </object>
+                                                            <group>
+                                                                <transform name="claw1-mesh">
+                                                                    <set>\
+                                                                        <scale>.3 .3 .3</scale>
+                                                                        <rotate>-15 0 0 1</rotate>
+                                                                    </set>
+                                                                    <object instanceof="claw">
+                                                                        <material>
+                                                                            <ambient>0.7 0.3 0.6</ambient>
+                                                                            <diffuse>0.7 0.7 0.7</diffuse>
+                                                                            <specular>0.9 0.9 0.9</specular>
+                                                                            <shininess>100</shininess>
+                                                                        </material>
+                                                                    </object>
+                                                                </transform>
+                                                                <transform name="claw2-mesh">
+                                                                    <set>
+                                                                        <scale>-.3 .3 .3</scale>
+                                                                        <rotate>-15 0 0 1</rotate>
+                                                                    </set>
+                                                                    <object instanceof="claw">
+                                                                        <material>
+                                                                            <ambient>0.7 0.2 0.8</ambient>
+                                                                            <diffuse>0.8 0.8 0.8</diffuse>
+                                                                            <specular>0.1 0.1 0.1</specular>
+                                                                            <shininess>100</shininess>
+                                                                        </material>
+                                                                    </object>
+                                                                </transform>
+                                                            </group>
                                                         </transform>
                                                     </group>
                                                 </transform>
@@ -112,99 +145,122 @@
                                 </transform>
                             </group>
                         </transform>
-                    </transform>
-                    <transform name="arm-right">
-                        <set>
-                            <translate>-1 0 0</translate>
-                            <scale>-1 1 1</scale>
-                        </set>
-                        <group name="arm-r">
-                            <transform name="pivot-r">
-                                <set>
-                                    <translate>1 1 0</translate>
-                                    <rotate>15 0 1 0</rotate>
-                                </set>
-                                <group>
-                                    <transform name="pivot-mesh-r">
-                                        <set>
-                                            <scale>.5 .5 .5</scale>
-                                        </set>
-                                        <object instanceof="pivot">
-                                            <material>
-                                                <color>.8 .8 0</color>
-                                            </material>
-                                        </object>
-                                    </transform>
-                                    <transform name="armLower-r">
-                                        <set>
-                                            <rotate>30 1 0 0</rotate>
-                                        </set>
-                                        <group>
-                                            <transform name="armLower-mesh-r">
-                                                <set>
-                                                    <scale>1 1 1</scale>
-                                                </set>
-                                                <object instanceof="LowerArm">
-                                                    <material>
-                                                        <color>1 .5 0</color>
-                                                    </material>
-                                                </object>
-                                            </transform>
-                                            <transform name="armUpper-r">
-                                                <set>
-                                                    <translate>0 4 0</translate>
-                                                    <rotate>90 1 0 0</rotate>
-                                                </set>
-                                                <group>
-                                                    <transform name="armUpper-mesh-r">
-                                                        <set>
-                                                            <scale>1 1 1</scale>
-                                                        </set>
-                                                        <object instanceof="UpperArm">
-                                                            <material>
-                                                                <color>.75 0 1</color>
-                                                            </material>
-                                                        </object>
-                                                    </transform>
-                                                    <transform name="claws-r">
-                                                        <set>
-                                                            <translate>0 4 0</translate>
-                                                        </set>
-                                                        <group>
-                                                            <transform name="claw1-mesh-r">
-                                                                <set>\
-                                                                    <scale>.3 .3 .3</scale>
-                                                                    <rotate>-15 0 0 1</rotate>
-                                                                </set>
-                                                                <object instanceof="claw">
-                                                                    <material>
-                                                                        <color>1 0 0</color>
-                                                                    </material>
-                                                                </object>
-                                                            </transform>
-                                                            <transform name="claw2-mesh-r">
-                                                                <set>
-                                                                    <scale>-.3 .3 .3</scale>
-                                                                    <rotate>-15 0 0 1</rotate>
-                                                                </set>
-                                                                <object instanceof="claw">
-                                                                    <material>
-                                                                        <color>1 0 0</color>
-                                                                    </material>
-                                                                </object>
-                                                            </transform>
-                                                        </group>
-                                                    </transform>
-                                                </group>
-                                            </transform>
-                                        </group>
-                                    </transform>
-                                </group>
-                            </transform>
-                        </group>
-                    </transform>
+                        <transform name="arm-right">
+                            <set>
+                                <translate>-1 0 0</translate>
+                                <scale>-1 1 1</scale>
+                            </set>
+                            <group name="arm-r">
+                                <transform name="pivot-r">
+                                    <set>
+                                        <translate>1 1 0</translate>
+                                        <rotate>15 0 1 0</rotate>
+                                    </set>
+                                    <group>
+                                        <transform name="pivot-mesh-r">
+                                            <set>
+                                                <scale>1.5 1.5 1.5</scale>
+                                            </set>
+                                            <object instanceof="box">
+                                                <material>
+                                                    <ambient>0.1 0.2 0.3</ambient>
+                                                    <diffuse>0.5 0.5 0.5</diffuse>
+                                                    <specular>0.8 0.8 0.8</specular>
+                                                    <shininess>100</shininess>
+                                                </material>
+                                            </object>
+                                        </transform>
+                                        <transform name="armLower-r">
+                                            <set>
+                                                <rotate>30 1 0 0</rotate>
+                                            </set>
+                                            <group>
+                                                <transform name="armLower-mesh-r">
+                                                    <set>
+                                                        <scale>.4 4 .4</scale>
+                                                    </set>
+                                                    <object instanceof="cylinder">
+                                                        <material>
+                                                            <ambient>0.3 0.2 0.1</ambient>
+                                                            <diffuse>0.4 0.4 0.4</diffuse>
+                                                            <specular>0.9 0.9 0.9</specular>
+                                                            <shininess>100</shininess>
+                                                        </material>
+                                                    </object>
+                                                </transform>
+                                                <transform name="armUpper-r">
+                                                    <set>
+                                                        <translate>0 4 0</translate>
+                                                        <rotate>90 1 0 0</rotate>
+                                                    </set>
+                                                    <group>
+                                                        <transform name="armUpper-mesh-r">
+                                                            <set>
+                                                                <scale>.4 4 .4</scale>
+                                                            </set>
+                                                            <object instanceof="cylinder">
+                                                                <material>
+                                                                    <ambient>0.3 0.5 0.1</ambient>
+                                                                    <diffuse>0.6 0.6 0.6</diffuse>
+                                                                    <specular>0.9 0.9 0.9</specular>
+                                                                    <shininess>100</shininess>
+                                                                </material>
+                                                            </object>
+                                                        </transform>
+                                                        <transform name="claws-r">
+                                                            <set>
+                                                                <translate>0 4 0</translate>
+                                                            </set>
+                                                            <light>
+                                                                <ambient>.9 .9 .9</ambient>
+                                                                <diffuse>.5 .5 .5</diffuse>
+                                                                <specular>.4 .4 .4</specular>
+                                                                <position>0 0 0</position>
+                                                                <spotangle>180</spotangle>
+                                                                <spotdirection>1 0 0</spotdirection>
+                                                            </light>
+                                                            <group>
+                                                                <transform name="claw1-mesh-r">
+                                                                    <set>\
+                                                                        <scale>.3 .3 .3</scale>
+                                                                        <rotate>-15 0 0 1</rotate>
+                                                                    </set>
+                                                                    <object instanceof="claw" texture="checkerboard">
+                                                                        <material>
+                                                                            <ambient>0.7 0.3 0.6</ambient>
+                                                                            <diffuse>0.7 0.7 0.7</diffuse>
+                                                                            <specular>0.9 0.9 0.9</specular>
+                                                                            <shininess>100</shininess>
+                                                                        </material>
+                                                                    </object>
+                                                                </transform>
+                                                                <transform name="claw2-mesh-r">
+                                                                    <set>
+                                                                        <scale>-.3 .3 .3</scale>
+                                                                        <rotate>-15 0 0 1</rotate>
+                                                                    </set>
+                                                                    <object instanceof="claw">
+                                                                        <material>
+                                                                            <ambient>0.7 0.2 0.8</ambient>
+                                                                            <diffuse>0.8 0.8 0.8</diffuse>
+                                                                            <specular>0.1 0.1 0.1</specular>
+                                                                            <shininess>100</shininess>
+                                                                        </material>
+                                                                    </object>
+                                                                </transform>
+                                                            </group>
+                                                        </transform>
+                                                    </group>
+                                                </transform>
+                                            </group>
+                                        </transform>
+                                    </group>
+                                </transform>
+                            </group>
+                        </transform>
+                    </group>
                 </group>
-            </group>
-        </transform>
+            </transform>
+        </group>
     </transform>
 </scene>

@@ -14,6 +14,8 @@ struct LightProperties
     vec3 diffuse;
     vec3 specular;
     vec4 position;
+    float cosSpotCutoff;
+    vec4 spotdirection;
 };
 
 
@@ -32,8 +34,6 @@ uniform sampler2D image;
 
 out vec4 fColor;
 
-in vec4 outColor;
-
 void main()
 {
     vec3 lightVec,viewVec,reflectVec;
@@ -51,8 +51,14 @@ void main()
         else
             lightVec = normalize(-light[i].position.xyz);
 
+        vec3 spotdirection = normalize(light[i].spotdirection.xyz);
+        if (dot(-lightVec,spotdirection)<light[i].cosSpotCutoff)
+            continue;
+
         vec3 tNormal = fNormal;
         normalView = normalize(tNormal.xyz);
+
+
         nDotL = dot(normalView,lightVec);
 
         viewVec = -fPosition.xyz;
@@ -71,7 +77,6 @@ void main()
             specular = vec3(0,0,0);
         fColor = fColor + vec4(ambient+diffuse+specular,1.0);
     }
-//    fColor = fColor * texture(image,fTexCoord.st);
-//    fColor = vec4(fTexCoord.s,fTexCoord.t,0,1);
-    fColor = outColor;
+    fColor = fColor * texture(image,fTexCoord.st);
+    //fColor = vec4(fTexCoord.s,fTexCoord.t,0,1);
 }

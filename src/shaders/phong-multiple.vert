@@ -14,9 +14,6 @@ out vec3 fNormal;
 out vec4 fPosition;
 out vec4 fTexCoord;
 
-uniform vec3 vColor;
-out vec4 outColor;
-
 void main()
 {
     vec3 lightVec,viewVec,reflectVec;
@@ -32,7 +29,5 @@ void main()
     fNormal = normalize(tNormal.xyz);
 
     fTexCoord = texturematrix * vec4(1*vTexCoord.s,1*vTexCoord.t,0,1);
-
-    outColor = vec4(vColor, 1);
 
 }

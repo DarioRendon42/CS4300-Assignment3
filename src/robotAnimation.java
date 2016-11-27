@@ -29,23 +29,27 @@ public class robotAnimation {
     angleOfRotation = (angleOfRotation + 1)%360;
     //rotate the whole robot arm
     animation("robot1-whole-robot", new Matrix4f().rotate((float)Math.toRadians(angleOfRotation),0, 1,0));
-    animation("robot2-whole-robot", new Matrix4f().rotate((float)Math.toRadians(angleOfRotation),0, 1,0));
+    //animation("robot2-whole-robot", new Matrix4f().rotate((float)Math.toRadians(angleOfRotation),0, 1,0));
     //rotate lowerarm for robot1
     animation("robot1-armLower", new Matrix4f().rotate((float)Math.toRadians(Math.sin(time / 50) * 30),1, 0,0));
-    animation("robot1-armLower-r", new Matrix4f().rotate((float)Math.toRadians(Math.sin(time / 50) * 30),1, 0,0));
+    animation("robot1-armLower-r", new Matrix4f().rotate((float)Math.toRadians(-Math.sin(time / 50) * 30),1, 0,0));
     //move claws for robot1
     animation("robot1-claw1-mesh", new Matrix4f().rotate((float)Math.toRadians(Math.sin(time / 20) * 40),0, 0,1));
     animation("robot1-claw2-mesh", new Matrix4f().rotate((float)Math.toRadians(- (Math.sin(time / 20) * 40)),0, 0,1));
     animation("robot1-claw1-mesh-r", new Matrix4f().rotate((float)Math.toRadians(Math.sin(time / 20) * 40),0, 0,1));
     animation("robot1-claw2-mesh-r", new Matrix4f().rotate((float)Math.toRadians(- (Math.sin(time / 20) * 40)),0, 0,1));
     //rotate lowerarm for robot2
-    animation("robot2-armLower", new Matrix4f().rotate((float)Math.toRadians(Math.sin(time / 50) * 30),1, 0,0));
-    animation("robot2-armLower-r", new Matrix4f().rotate((float)Math.toRadians(Math.sin(time / 50) * 30),1, 0,0));
+    //animation("robot2-armLower", new Matrix4f().rotate((float)Math.toRadians(Math.sin(time / 50) * 30),1, 0,0));
+    //animation("robot2-armLower-r", new Matrix4f().rotate((float)Math.toRadians(Math.sin(time / 50) * 30),1, 0,0));
     //move claws for robot2
-    animation("robot2-claw1-mesh", new Matrix4f().rotate((float)Math.toRadians(Math.sin(time / 20) * 40),0, 0,1));
-    animation("robot2-claw2-mesh", new Matrix4f().rotate((float)Math.toRadians(- (Math.sin(time / 20) * 40)),0, 0,1));
-    animation("robot2-claw1-mesh-r", new Matrix4f().rotate((float)Math.toRadians(Math.sin(time / 20) * 40),0, 0,1));
-    animation("robot2-claw2-mesh-r", new Matrix4f().rotate((float)Math.toRadians(- (Math.sin(time / 20) * 40)),0, 0,1));
+    //animation("robot2-claw1-mesh", new Matrix4f().rotate((float)Math.toRadians(Math.sin(time / 20) * 40),0, 0,1));
+    //animation("robot2-claw2-mesh", new Matrix4f().rotate((float)Math.toRadians(- (Math.sin(time / 20) * 40)),0, 0,1));
+    //animation("robot2-claw1-mesh-r", new Matrix4f().rotate((float)Math.toRadians(Math.sin(time / 20) * 40),0, 0,1));
+    //animation("robot2-claw2-mesh-r", new Matrix4f().rotate((float)Math.toRadians(- (Math.sin(time / 20) * 40)),0, 0,1));
+    animation("bird-whole-bird", new Matrix4f().rotate(((float)Math.toRadians(angleOfRotation)) ,0, 1,0).translate(15,0f,0f));
+
+    animation("bird-left-wing", new Matrix4f().rotate((float)Math.toRadians(Math.sin(time / 15) * 40),1, 0,0));
+    animation("bird-right-wing", new Matrix4f().rotate((float)Math.toRadians(-Math.sin(time / 15) * 40),1, 0,0));
   }
 
 

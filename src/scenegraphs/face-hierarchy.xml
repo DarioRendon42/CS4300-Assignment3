@@ -5,9 +5,10 @@
     <instance name="cone" path="models/cone"/>
     <image name="earth" path="textures/earthmap.png" />
     <image name="white" path="textures/white.png" />
+    <image name="1x1" path="textures/1x1.png" />
 
     <light>
-        <ambient>0.8 0.8 0.8</ambient>
+        <ambient>1 1 1</ambient>
         <diffuse>0.8 0.8 0.8</diffuse>
         <specular>0.8 0.8 0.8</specular>
         <position>0 100 0 </position>
@@ -38,7 +39,7 @@
                     <scale>20 25 20</scale>
                 </set>
                 <light>
-                    <ambient>0.4 0.4 0.4</ambient>
+                    <ambient>0.4 0.4 .4</ambient>
                     <diffuse>0.4 0.4 0.4</diffuse>
                     <specular>0.4 0.4 0.4</specular>
                     <position>0 100 100 </position>
