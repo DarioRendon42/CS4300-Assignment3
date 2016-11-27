@@ -1,0 +1,17 @@
+DOCUMENTATION
+
+1. The scene contains a 2 armed robot and a simple bird
+the robot's arms are moving around and the bird is flying above it
+
+2. screenshots provided outside this file
+
+3. robot - consists of a cylinder base, 2 arms, each with 2 points of rotation, positioned a bit off center of the base.
+           Each arm has a cube for a base, and each segment is a cylinder, a claw is attached at the end which is
+           a custom modeled part, though is very simple to make
+   bird  - consists of a cylinder body, with two rectangular prisms as "wings" positioned on either side
+
+4. Dario Rendon - For assignment 3, created the robot scenegraph as well as the custom claw part. Also did the YMCA poses
+                  For assignment 4, attempted Part 1, wrote documentation
+   Xian Fan     - For assignment 3, created the animations for the robot and cleaned up code and xml files, also did YMCA pose
+                  For assignment 4, created bird scenegraph and corresponding animations, attempted camera switching
+5. part 1 was very hard, camera switching was moderately hard, everything else was easy

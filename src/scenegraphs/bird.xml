@@ -1,0 +1,73 @@
+<scene>
+    <instance name="sphere" path="models/sphere"></instance>
+    <instance name="box" path="models/box"></instance>
+    <instance name="cylinder" path="models/cylinder"></instance>
+    <transform>
+        <set>
+            <translate>0 2 0</translate>
+            <scale>10 10 10</scale>
+        </set>
+        <group name="bird">
+            <transform name="whole-bird">
+                <set>
+                    <scale>1 1 1</scale>
+                </set>
+                <group>
+                    <group name="body">
+                        <transform name="body-mesh">
+                            <set>
+                                <rotate>90 0 0 1</rotate>
+                                <scale>0.7 5 0.7</scale>
+
+                            </set>
+                            <object instanceof="cylinder">
+                                <material>
+                                    <ambient>0.7 0.5 0.3</ambient>
+                                    <diffuse>0.2 0.2 0.2</diffuse>
+                                    <specular>0.9 0.9 0.9</specular>
+                                    <shininess>100</shininess>
+                                </material>
+                            </object>
+                        </transform>
+                    </group>
+                    <group name="wings">
+                        <transform name="left-wing">
+                            <set>
+
+                                <translate>-2.5 0 2</translate>
+                                <scale>3 0.1 3</scale>
+                            </set>
+                            <object instanceof="box">
+                                <material>
+                                    <ambient>0.1 0.2 0.3</ambient>
+                                    <diffuse>0.5 0.5 0.5</diffuse>
+                                    <specular>0.8 0.8 0.8</specular>
+                                    <shininess>100</shininess>
+                                </material>
+                            </object>
+                        </transform>
+                        <transform name="right-wing">
+                            <set>
+                                <rotate>180 1 0 0</rotate>
+                                <translate>-2.5 0 2</translate>
+                                <scale>3 0.1 3</scale>
+
+                            </set>
+                            <object instanceof="box">
+                                <material>
+                                    <ambient>0.1 0.2 0.3</ambient>
+                                    <diffuse>0.5 0.5 0.5</diffuse>
+                                    <specular>0.8 0.8 0.8</specular>
+                                    <shininess>100</shininess>
+                                </material>
+                            </object>
+                        </transform>
+                    </group>
+                </group>
+            </transform>
+
+
+        </group>
+
+    </transform>
+</scene>
