@@ -19,13 +19,13 @@ import java.util.Stack;
  */
 public class Raytracer {
     private int width, height;
-    private IScenegraph<IVertexData> scenegraph;
+    private IScenegraph<VertexAttrib> scenegraph;
     private Stack<Matrix4f> modelview;
     private float FOV;
 
     private final float marginOfError = .0001f;
 
-    public Raytracer(int width, int height, sgraph.IScenegraph<IVertexData> scenegraph, Stack<Matrix4f> modelview, float FOV) {
+    public Raytracer(int width, int height, sgraph.IScenegraph<VertexAttrib> scenegraph, Stack<Matrix4f> modelview, float FOV) {
         this.width = width;
         this.height = height;
         this.scenegraph = scenegraph;
