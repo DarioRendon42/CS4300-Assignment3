@@ -90,7 +90,7 @@ public class Raytracer {
     Color shader(/* TODO make useful parameters */) {
         // TODO once you know what you hit, get it's color
         // idk how to actually do this past getting the ambient and basic shadows
-        // maybe reimplimenting the phong shaders won't be too hard and then we can get everything else that's there
+        // maybe re implementing the phong shaders won't be too hard and then we can get everything else that's there
         // without too much trouble
         // texture mapping I don't get how to do at all, the rest I have a vague idea at least
         return null;
