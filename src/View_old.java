@@ -192,9 +192,9 @@ public class View_old {
         time++;
     /*
      *OpenGL batch-processes all its OpenGL commands.
-          *  *The next command asks OpenGL to "empty" its batch of issued commands, i.e. draw
+          *  *The next command asks OpenGL to "empty" its batch of issued commands, i.e. raytrace
      *
-     *This a non-blocking function. That is, it will signal OpenGL to draw, but won't wait for it to
+     *This a non-blocking function. That is, it will signal OpenGL to raytrace, but won't wait for it to
      *finish drawing.
      *
      *If you would like OpenGL to start drawing and wait until it is done, call glFinish() instead.

@@ -1,21 +1,13 @@
 import com.jogamp.common.nio.Buffers;
 import com.jogamp.opengl.*;
-import com.jogamp.opengl.util.GLBuffers;
 
 import org.joml.Matrix4f;
 import org.joml.Vector2f;
 import org.joml.Vector3f;
-import org.joml.Vector4f;
-import sgraph.IScenegraph;
 
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.nio.FloatBuffer;
-import java.nio.IntBuffer;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
@@ -113,7 +105,7 @@ public class View {
 
     public void drawRaytrace() {
         Raytracer rt = new Raytracer(WINDOW_WIDTH, WINDOW_HEIGHT, scenegraph, modelView, FOV);
-        rt.draw();
+        rt.raytrace();
     }
 
     public void drawOpenGL(GLAutoDrawable gla) {
@@ -157,9 +149,9 @@ public class View {
         time++;
     /*
      *OpenGL batch-processes all its OpenGL commands.
-          *  *The next command asks OpenGL to "empty" its batch of issued commands, i.e. draw
+          *  *The next command asks OpenGL to "empty" its batch of issued commands, i.e. raytrace
      *
-     *This a non-blocking function. That is, it will signal OpenGL to draw, but won't wait for it to
+     *This a non-blocking function. That is, it will signal OpenGL to raytrace, but won't wait for it to
      *finish drawing.
      *
      *If you would like OpenGL to start drawing and wait until it is done, call glFinish() instead.

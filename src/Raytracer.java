@@ -21,6 +21,8 @@ public class Raytracer {
     private Stack<Matrix4f> modelview;
     private float FOV;
 
+    private final float marginOfError = .0001f;
+
     public Raytracer(int width, int height, sgraph.IScenegraph<VertexAttrib> scenegraph, Stack<Matrix4f> modelview, float FOV) {
         this.width = width;
         this.height = height;
@@ -29,34 +31,21 @@ public class Raytracer {
         this.FOV = FOV;
     }
 
-    public void draw() {
+    public void raytrace() {
         BufferedImage output = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
         for (int i = 0; i < width; i++) {
             for (int j = 0; j < height; j++) {
                 int r, g, b;
                 // set to background color
                 r = g = b = 0;
-                Vector4f ray = new Vector4f((float) (i - width / 2), (float) (j - height / 2), (float) (-height / (2 * Math.tan(FOV / 2))), 0);
+                Vector4f rayOrigin = new Vector4f(0, 0, 0, 0);
+                Vector4f rayDirection = new Vector4f((float) (i - width / 2), (float) (j - height / 2), (float) (-height / (2 * Math.tan(FOV / 2))), 0);
 
                 List<Float> intersections;
-                intersections = raycast(ray);
-                int indexOfLowestIntersection = -1;
-                if (intersections.size() == 0) {
-                    indexOfLowestIntersection = -1;
-                } else if (intersections.size() == 1) {
-                    indexOfLowestIntersection = 0;
-                } else {
-                    float min = -1;
-                    for (int k = 0; k < intersections.size(); k++) {
-                        Float f = intersections.get(k);
-                        if (k == 0 || 0 < f && f < min) {
-                            min = f;
-                            indexOfLowestIntersection = k;
-                        }
-                    }
-                }
+                intersections = scenegraph.getRoot().raytrace(rayOrigin, rayDirection);
+                int indexOfLowestIntersection = getIndexOfLowestIntersection(intersections);
 
-                Color c = shader(indexOfLowestIntersection);
+                Color c = shader(/* TODO fill here with relevant parameters*/);
 
                 output.setRGB(i, j, new Color(r, g, b).getRGB());
             }
@@ -78,14 +67,35 @@ public class Raytracer {
         System.out.println("Done Raytracing");
     }
 
-    List raycast(Vector4f ray) {
+    private int getIndexOfLowestIntersection(List<Float> intersections) {
+        int indexOfLowestIntersection = -1;
+        if (intersections.size() == 0) {
+            indexOfLowestIntersection = -1;
+        } else if (intersections.size() == 1) {
+            indexOfLowestIntersection = 0;
+        } else {
+            float min = -1;
+            for (int k = 0; k < intersections.size(); k++) {
+                Float f = intersections.get(k);
+                if (k == 0 || 0 < f && f < min) {
+                    min = f;
+                    indexOfLowestIntersection = k;
+                }
+            }
+        }
+        return indexOfLowestIntersection;
+    }
 
+
+    Color shader(/* TODO make useful parameters */) {
+        // TODO once you know what you hit, get it's color
+        // idk how to actually do this past getting the ambient and basic shadows
+        // maybe reimplimenting the phong shaders won't be too hard and then we can get everything else that's there
+        // without too much trouble
+        // texture mapping I don't get how to do at all, the rest I have a vague idea at least
         return null;
     }
 
-    Color shader(int i) {
-        return null;
-    }
 
 
 }
