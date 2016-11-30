@@ -1,7 +1,8 @@
+package main;
+
 import org.joml.Matrix4f;
 import org.joml.Vector4f;
 import sgraph.IScenegraph;
-import util.IVertexData;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -44,7 +45,7 @@ public class Raytracer {
                 Vector4f rayDirection = new Vector4f((float) (i - width / 2), (float) (j - height / 2), (float) (-height / (2 * Math.tan(FOV / 2))), 0);
 
                 List<Float> intersections;
-                intersections = scenegraph.getRoot().raytrace(rayOrigin, rayDirection);
+                intersections = scenegraph.getRoot().raytrace(this, rayOrigin, rayDirection);
                 int indexOfLowestIntersection = getIndexOfLowestIntersection(intersections);
 
                 Color c = shader(/* TODO fill here with relevant parameters*/);
@@ -99,5 +100,8 @@ public class Raytracer {
     }
 
 
+    public Float findMeshIntersection(String objInstanceName, Vector4f rayOrigin, Vector4f rayDirection) {
 
+        return null;
+    }
 }

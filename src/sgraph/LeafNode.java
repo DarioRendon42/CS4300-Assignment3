@@ -1,8 +1,10 @@
 package sgraph;
 
+import main.Raytracer;
 import org.joml.Matrix4f;
 import org.joml.Vector4f;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
@@ -83,10 +85,12 @@ public class LeafNode extends AbstractNode {
     }
 
     @Override
-    public List<Float> raytrace(Vector4f rayOrigin, Vector4f rayDirection) {
+    public List<Float> raytrace(Raytracer raytracer, Vector4f rayOrigin, Vector4f rayDirection) {
         // TODO intersection math goes here???
         // cast ray through each polygon to see if it hits that thing
         // find closest polygon
-        return null;
+        List<Float> result =  new ArrayList<Float>();
+        result.add(raytracer.findMeshIntersection(objInstanceName, rayOrigin, rayDirection));
+        return result;
     }
 }

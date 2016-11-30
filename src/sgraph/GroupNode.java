@@ -1,5 +1,6 @@
 package sgraph;
 
+import main.Raytracer;
 import org.joml.Matrix4f;
 
 import org.joml.Vector4f;
@@ -147,10 +148,10 @@ public class GroupNode extends AbstractNode {
     }
 
     @Override
-    public List<Float> raytrace(Vector4f rayOrigin, Vector4f rayDirection) {
+    public List<Float> raytrace(Raytracer raytracer, Vector4f rayOrigin, Vector4f rayDirection) {
         List<Float> result = new ArrayList<>();
         for (INode child : children) {
-            result.addAll(child.raytrace(rayOrigin, rayDirection));
+            result.addAll(child.raytrace(raytracer, rayOrigin, rayDirection));
         }
         return result;
     }

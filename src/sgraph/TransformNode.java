@@ -1,5 +1,6 @@
 package sgraph;
 
+import main.Raytracer;
 import org.joml.Matrix4f;
 
 import org.joml.Vector4f;
@@ -191,9 +192,9 @@ public class TransformNode extends AbstractNode {
     }
 
     @Override
-    public List<Float> raytrace(Vector4f rayOrigin, Vector4f rayDirection) {
+    public List<Float> raytrace(Raytracer raytracer, Vector4f rayOrigin, Vector4f rayDirection) {
         // Makes sure that the ray is in the object's coordinate system
-        return child.raytrace(rayOrigin.mul(animation_transform).mul(transform),
+        return child.raytrace(raytracer, rayOrigin.mul(animation_transform).mul(transform),
                 rayDirection.mul(animation_transform).mul(transform));
     }
 }

@@ -1,5 +1,6 @@
 package sgraph;
 
+import main.Raytracer;
 import org.joml.Matrix4f;
 
 import org.joml.Vector4f;
@@ -148,6 +149,6 @@ public interface INode {
    * @param rayDirection The direction of the ray
    * @return
    */
-  List<Float> raytrace(Vector4f rayOrigin, Vector4f rayDirection);
+  List<Float> raytrace(Raytracer raytracer, Vector4f rayOrigin, Vector4f rayDirection);
 }
 
