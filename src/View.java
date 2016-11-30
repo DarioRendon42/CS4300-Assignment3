@@ -121,6 +121,12 @@ public class View {
         while (!modelView.empty())
             modelView.pop();
 
+
+        modelView.push(new Matrix4f());
+        modelView.peek().lookAt(new Vector3f(70, 100, -80), new Vector3f(0, 0,
+                        0),
+                new Vector3f(0, 1, 0))
+                .mul(trackballTransform);
         /*
          *In order to change the shape of this triangle, we can either move the vertex positions above, or "transform" them
          * We use a modelview matrix to store the transformations to be applied to our triangle.
