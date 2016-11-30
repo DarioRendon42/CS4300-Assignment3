@@ -90,7 +90,9 @@ public class LeafNode extends AbstractNode {
         // cast ray through each polygon to see if it hits that thing
         // find closest polygon
         List<Float> result =  new ArrayList<Float>();
-        result.add(raytracer.findMeshIntersection(objInstanceName, rayOrigin, rayDirection));
+        if (objInstanceName.length() > 0) {
+            result.add(raytracer.findMeshIntersection(objInstanceName, rayOrigin, rayDirection));
+        }
         return result;
     }
 }

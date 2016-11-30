@@ -3,6 +3,7 @@ package main;
 import org.joml.Matrix4f;
 import org.joml.Vector4f;
 import sgraph.IScenegraph;
+import util.PolygonMesh;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -101,7 +102,8 @@ public class Raytracer {
 
 
     public Float findMeshIntersection(String objInstanceName, Vector4f rayOrigin, Vector4f rayDirection) {
-
+        PolygonMesh<VertexAttrib> mesh = scenegraph.getPolygonMeshes().get(objInstanceName);
+//        mesh.
         return null;
     }
 }
