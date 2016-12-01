@@ -5,6 +5,7 @@ import org.joml.Matrix4f;
 
 import org.joml.Vector4f;
 import util.Light;
+import util.Material;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -194,7 +195,14 @@ public class TransformNode extends AbstractNode {
     @Override
     public List<Float> raytrace(Raytracer raytracer, Vector4f rayOrigin, Vector4f rayDirection) {
         // Makes sure that the ray is in the object's coordinate system
-        return child.raytrace(raytracer, rayOrigin.mul(animation_transform).mul(transform),
-                rayDirection.mul(animation_transform).mul(transform));
+        Matrix4f inverse = new Matrix4f().identity().mul(animation_transform).mul(transform);
+        inverse = inverse.invert();
+        return child.raytrace(raytracer, rayOrigin.mul(inverse),
+                rayDirection.mul(inverse));
+    }
+
+    @Override
+    public List<Material> getObjectMaterial() {
+        return child.getObjectMaterial();
     }
 }

@@ -5,6 +5,7 @@ import org.joml.Matrix4f;
 
 import org.joml.Vector4f;
 import util.Light;
+import util.Material;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -154,5 +155,14 @@ public class GroupNode extends AbstractNode {
             result.addAll(child.raytrace(raytracer, rayOrigin, rayDirection));
         }
         return result;
+    }
+
+    @Override
+    public List<Material> getObjectMaterial() {
+        List<Material> m = new ArrayList<>();
+        for(INode child : children) {
+            m.addAll(child.getObjectMaterial());
+        }
+        return m;
     }
 }

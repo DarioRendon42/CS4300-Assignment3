@@ -5,6 +5,7 @@ import org.joml.Matrix4f;
 
 import org.joml.Vector4f;
 import util.Light;
+import util.Material;
 
 import java.util.List;
 import java.util.Stack;
@@ -150,5 +151,7 @@ public interface INode {
    * @return
    */
   List<Float> raytrace(Raytracer raytracer, Vector4f rayOrigin, Vector4f rayDirection);
+
+  List<Material> getObjectMaterial();
 }
 
