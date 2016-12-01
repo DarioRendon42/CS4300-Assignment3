@@ -101,9 +101,29 @@ public class Raytracer {
     }
 
 
-    public Float findMeshIntersection(String objInstanceName, Vector4f rayOrigin, Vector4f rayDirection) {
-        PolygonMesh<VertexAttrib> mesh = scenegraph.getPolygonMeshes().get(objInstanceName);
-//        mesh.
-        return null;
+    public Float findObjectIntersection(String objInstanceName, Vector4f rayOrigin, Vector4f rayDirection) {
+        switch (objInstanceName) {
+            case "sphere":
+                return findSphereIntersection(rayOrigin, rayDirection);
+            case "box":
+                return findBoxIntersection(rayOrigin, rayDirection);
+            default:
+                return findMeshIntersection(objInstanceName, rayOrigin, rayDirection);
+        }
+    }
+
+    private Float findSphereIntersection(Vector4f rayOrigin, Vector4f rayDirection) {
+        System.out.println("No sphere intersection yet");
+        return -1f;
+    }
+
+    private Float findBoxIntersection(Vector4f rayOrigin, Vector4f rayDirection) {
+        System.out.println("No box intersection yet");
+        return -1f;
+    }
+
+    private Float findMeshIntersection(String objInstanceName, Vector4f rayOrigin, Vector4f rayDirection) {
+        System.out.println("No generic polygon mesh intersections yet");
+        return -1f;
     }
 }

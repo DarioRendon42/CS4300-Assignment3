@@ -91,7 +91,7 @@ public class LeafNode extends AbstractNode {
         // find closest polygon
         List<Float> result =  new ArrayList<Float>();
         if (objInstanceName.length() > 0) {
-            result.add(raytracer.findMeshIntersection(objInstanceName, rayOrigin, rayDirection));
+            result.add(raytracer.findObjectIntersection(objInstanceName, rayOrigin, rayDirection));
         }
         return result;
     }
