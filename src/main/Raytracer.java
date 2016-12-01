@@ -124,6 +124,7 @@ public class Raytracer {
 
     private Float findMeshIntersection(String objInstanceName, Vector4f rayOrigin, Vector4f rayDirection) {
         System.out.println("No generic polygon mesh intersections yet");
+        // TODO do barycentric math here
         return -1f;
     }
 }
