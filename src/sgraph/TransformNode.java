@@ -193,12 +193,15 @@ public class TransformNode extends AbstractNode {
     }
 
     @Override
-    public List<Float> raytrace(Raytracer raytracer, Vector4f rayOrigin, Vector4f rayDirection) {
+    public List<Float> raytrace(Raytracer raytracer, Vector4f rayOrigin, Vector4f rayDirection, Stack<Matrix4f> modelview) {
         // Makes sure that the ray is in the object's coordinate system
-        Matrix4f inverse = new Matrix4f().identity().mul(animation_transform).mul(transform);
-        inverse = inverse.invert();
-        return child.raytrace(raytracer, rayOrigin.mul(inverse),
-                rayDirection.mul(inverse));
+        modelview.add(new Matrix4f(modelview.peek()));
+        modelview.peek().mul(animation_transform)
+                .mul(transform);
+        List<Float> i = child.raytrace(raytracer, rayOrigin,
+                rayDirection, modelview);
+        modelview.pop();
+        return i;
     }
 
     @Override

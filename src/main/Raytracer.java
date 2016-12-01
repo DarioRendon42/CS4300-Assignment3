@@ -4,7 +4,6 @@ import org.joml.Matrix4f;
 import org.joml.Vector4f;
 import sgraph.IScenegraph;
 import util.Material;
-import util.PolygonMesh;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -41,8 +40,6 @@ public class Raytracer {
 
     public void raytrace() {
         BufferedImage output = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
-        modelview.add(modelview.peek());
-        modelview.peek().invert();
         for (int i = 0; i < width; i++) {
             for (int j = 0; j < height; j++) {
                 int r, g, b;
@@ -51,22 +48,20 @@ public class Raytracer {
                 Vector4f rayOrigin = new Vector4f(0, 0, 0, 1);
                 Vector4f rayDirection = new Vector4f((float) (i - width / 2), (float) (j - height / 2), (float) (-height / (2 * Math.tan(FOV / 2))), 1);
 
-                rayOrigin.mul(modelview.peek());
-                rayDirection.mul(modelview.peek());
 
 
 //                System.out.print(rayOrigin + "," + rayDirection);
 
                 List<Float> intersections;
-                intersections = scenegraph.getRoot().raytrace(this, rayOrigin, rayDirection);
-//                System.out.print(Arrays.toString(intersections.toArray()));
+                intersections = scenegraph.getRoot().raytrace(this, rayOrigin, rayDirection, modelview);
+                System.out.print(Arrays.toString(intersections.toArray()));
                 int indexOfLowestIntersection = getIndexOfLowestIntersection(intersections);
 
                 Color c = shader(indexOfLowestIntersection);
 
                 output.setRGB(i, j, c.getRGB());
             }
-//            System.out.println();
+            System.out.println();
         }
 
         OutputStream outStream = null;
@@ -110,8 +105,7 @@ public class Raytracer {
         // without too much trouble
         // texture mapping I don't get how to do at all, the rest I have a vague idea at least
         // objectHit is -1 if it didn't hit anything
-//        System.out.println(objectHit);
-        Color c;
+        System.out.println(objectHit);
         if(objectHit >= 0) {
             Material m = materials.get(objectHit);
             Vector4f a = m.getAmbient();
@@ -122,14 +116,17 @@ public class Raytracer {
     }
 
 
-    public Float findObjectIntersection(String objInstanceName, Vector4f rayOrigin, Vector4f rayDirection) {
+    public Float findObjectIntersection(String objInstanceName, Vector4f rayOrigin, Vector4f rayDirection, Stack<Matrix4f> modelview) {
+        Matrix4f inverse = new Matrix4f(modelview.peek()).invert();
+        Vector4f o = new Vector4f(rayOrigin).mul(inverse);
+        Vector4f d = new Vector4f(rayDirection).mul(inverse);
         switch (objInstanceName) {
             case "sphere":
-                return findSphereIntersection(rayOrigin, rayDirection);
+                return findSphereIntersection(o, d);
             case "box":
-                return findBoxIntersection(rayOrigin, rayDirection);
+                return findBoxIntersection(o, d);
             default:
-                return findMeshIntersection(objInstanceName, rayOrigin, rayDirection);
+                return findMeshIntersection(objInstanceName, o, d);
         }
     }
 

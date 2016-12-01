@@ -149,10 +149,12 @@ public class GroupNode extends AbstractNode {
     }
 
     @Override
-    public List<Float> raytrace(Raytracer raytracer, Vector4f rayOrigin, Vector4f rayDirection) {
+    public List<Float> raytrace(Raytracer raytracer, Vector4f rayOrigin, Vector4f rayDirection, Stack<Matrix4f> modelview) {
         List<Float> result = new ArrayList<>();
         for (INode child : children) {
-            result.addAll(child.raytrace(raytracer, rayOrigin, rayDirection));
+            modelview.add(new Matrix4f(modelview.peek()));
+            result.addAll(child.raytrace(raytracer, rayOrigin, rayDirection, modelview));
+            modelview.pop();
         }
         return result;
     }

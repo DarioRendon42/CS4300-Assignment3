@@ -148,9 +148,10 @@ public interface INode {
    * Returns a list of intersections with the objects in the scene
    * @param rayOrigin The origin of the ray
    * @param rayDirection The direction of the ray
+   * @param modelview
    * @return
    */
-  List<Float> raytrace(Raytracer raytracer, Vector4f rayOrigin, Vector4f rayDirection);
+  List<Float> raytrace(Raytracer raytracer, Vector4f rayOrigin, Vector4f rayDirection, Stack<Matrix4f> modelview);
 
   List<Material> getObjectMaterial();
 }

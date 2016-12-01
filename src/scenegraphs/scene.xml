@@ -40,7 +40,7 @@
 
             <object instanceof="sphere" texture="earth">
                 <material>
-                    <ambient> 0.2 0.2 0.2 </ambient>
+                    <ambient> 0.9 0.9 0.9 </ambient>
                     <diffuse> 0.8 0.8 0.8</diffuse>
                     <specular> 0.8 0.8 0.8</specular>
                     <shininess> 100 </shininess>
@@ -56,7 +56,7 @@
 
             <object instanceof="sphere">
                 <material>
-                    <ambient> 0.2 0.2 0.1 </ambient>
+                    <ambient> 0.9 0.9 0.1 </ambient>
                     <diffuse> 0.8 0.8 0.1</diffuse>
                     <specular> 0.8 0.8 0.1</specular>
                     <shininess> 100 </shininess>
@@ -74,7 +74,7 @@
 
             <object instanceof="sphere">
                 <material>
-                    <ambient> 0.1 0.2 0.1 </ambient>
+                    <ambient> 0.1 0.9 0.1 </ambient>
                     <diffuse> 0.1 0.8 0.1</diffuse>
                     <specular> 0.1 0.8 0.1</specular>
                     <shininess> 100 </shininess>
