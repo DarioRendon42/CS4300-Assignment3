@@ -90,13 +90,11 @@ public class View {
         projectionLocation = shaderLocations.getLocation("projection");
     }
 
+    public void setRaytrace() {
+        raytrace = true;
+    }
 
     public void draw(GLAutoDrawable gla) {
-        modelView.push(new Matrix4f());
-        modelView.peek().lookAt(new Vector3f(70, 100, -80), new Vector3f(0, 0,
-                        0),
-                new Vector3f(0, 1, 0))
-                .mul(trackballTransform);
         if (raytrace) {
             drawRaytrace();
             raytrace = false;
@@ -106,6 +104,11 @@ public class View {
     }
 
     public void drawRaytrace() {
+        modelView.push(new Matrix4f());
+        modelView.peek().lookAt(new Vector3f(70, 100, -80), new Vector3f(0, 0,
+                        0),
+                new Vector3f(0, 1, 0))
+                .mul(trackballTransform);
         Raytracer rt = new Raytracer(WINDOW_WIDTH, WINDOW_HEIGHT, scenegraph, modelView, FOV);
         rt.raytrace();
     }
