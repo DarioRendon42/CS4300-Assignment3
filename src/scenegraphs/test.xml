@@ -1,0 +1,29 @@
+<scene>
+    <instance name="sphere" path="models/sphere.obj"/>
+    <transform>
+        <set>
+            <translate>1 0 0</translate>
+            <scale>10 10 10</scale>
+        </set>
+        <light>
+            <ambient>0.2 0.2 0.2</ambient>
+            <diffuse>0.4 0.4 0.4</diffuse>
+            <specular>0.4 0.4 0.4</specular>
+            <position>100 100 -100 </position>
+            <spotangle>180</spotangle>
+            <spotdirection>0 -1 0 </spotdirection>
+        </light>
+        <object instanceof="sphere">
+            <material>
+                <ambient>0.1 0.9 0.1</ambient>
+                <diffuse>0.1 0.8 0.1</diffuse>
+                <specular>0.1 0.8 0.1</specular>
+                <shininess>100</shininess>
+                <absorption>0.0</absorption>
+                <reflection>0.0</reflection>
+                <transparency>1.0</transparency>
+                <refractive>1</refractive>
+            </material>
+        </object>
+    </transform>
+</scene>

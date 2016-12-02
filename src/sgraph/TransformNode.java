@@ -195,7 +195,7 @@ public class TransformNode extends AbstractNode {
     @Override
     public List<Float> raytrace(Raytracer raytracer, Vector4f rayOrigin, Vector4f rayDirection, Stack<Matrix4f> modelview) {
         // Makes sure that the ray is in the object's coordinate system
-        modelview.add(new Matrix4f(modelview.peek()));
+        modelview.push(new Matrix4f(modelview.peek()));
         modelview.peek().mul(animation_transform)
                 .mul(transform);
         List<Float> i = child.raytrace(raytracer, rayOrigin,

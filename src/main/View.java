@@ -104,8 +104,10 @@ public class View {
     }
 
     public void drawRaytrace() {
+        while (!modelView.empty())
+            modelView.pop();
         modelView.push(new Matrix4f());
-        modelView.peek().lookAt(new Vector3f(70, 100, -800), new Vector3f(0, 0,
+        modelView.peek().lookAt(new Vector3f(70, 100, -80), new Vector3f(0, 0,
                         0),
                 new Vector3f(0, 1, 0))
                 .mul(trackballTransform);
@@ -128,7 +130,7 @@ public class View {
 
 
         modelView.push(new Matrix4f());
-        modelView.peek().lookAt(new Vector3f(70, 100, -800), new Vector3f(0, 0,
+        modelView.peek().lookAt(new Vector3f(70, 100, -80), new Vector3f(0, 0,
                         0),
                 new Vector3f(0, 1, 0))
                 .mul(trackballTransform);

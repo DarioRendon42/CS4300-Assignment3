@@ -89,7 +89,7 @@ public class LeafNode extends AbstractNode {
     public List<Float> raytrace(Raytracer raytracer, Vector4f rayOrigin, Vector4f rayDirection, Stack<Matrix4f> modelview) {
         List<Float> result =  new ArrayList<Float>();
         if (objInstanceName.length() > 0) {
-            result.add(raytracer.findObjectIntersection(objInstanceName, rayOrigin, rayDirection, modelview));
+            result.add(raytracer.findObjectIntersection(objInstanceName, rayOrigin, rayDirection, modelview.peek()));
         }
         return result;
     }

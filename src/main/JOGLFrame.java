@@ -20,7 +20,7 @@ import java.io.InputStream;
 public class JOGLFrame extends JFrame
 {
     private View view;
-//    private TextRenderer textRenderer;
+    private TextRenderer textRenderer;
     private GLCanvas canvas;
     public JOGLFrame(String title)
     {
@@ -57,7 +57,7 @@ public class JOGLFrame extends JFrame
                             .getResourceAsStream
                                     ("scenegraphs/scene.xml");
                     view.initScenegraph(canvas,in);
-//                    textRenderer = new TextRenderer(new Font("SansSerif", Font.PLAIN, 18),true,false);
+                    textRenderer = new TextRenderer(new Font("SansSerif", Font.PLAIN, 18),true,false);
                     glAutoDrawable.getGL().setSwapInterval(1);
                 }
                 catch (Exception e)
@@ -75,12 +75,12 @@ public class JOGLFrame extends JFrame
             @Override
             public void display(GLAutoDrawable glAutoDrawable) { //called every time this window must be redrawn
                 view.draw(canvas);
-//                textRenderer.beginRendering(canvas.getWidth(), canvas.getHeight());
-                // optionally set the color
-//                textRenderer.setColor(1.0f, 1.0f, 0.0f, 1.0f);
-//                String text = "Frame rate: " + canvas.getAnimator().getLastFPS();
-//                textRenderer.draw(text, 10, canvas.getHeight()-50);
-//                textRenderer.endRendering();
+                textRenderer.beginRendering(canvas.getWidth(), canvas.getHeight());
+//                 optionally set the color
+                textRenderer.setColor(1.0f, 1.0f, 0.0f, 1.0f);
+                String text = "Frame rate: " + canvas.getAnimator().getLastFPS();
+                textRenderer.draw(text, 10, canvas.getHeight()-50);
+                textRenderer.endRendering();
             }
 
             @Override
@@ -89,6 +89,10 @@ public class JOGLFrame extends JFrame
                 repaint(); //refresh window
             }
         });
+
+
+        canvas.setFocusable(true);
+        canvas.requestFocus();
 
         //Add an animator to the canvas
         AnimatorBase animator = new FPSAnimator(canvas,60);
